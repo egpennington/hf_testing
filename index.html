@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marathon automated HF testing data input app">
+  <meta name="keywords" content="HTML, CSS, javascript, HF Acid, scrimba">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Marathon Alky HF Testing</title>
+</head>
+<body>
+  <div class="main" id="page1">
+    <h1>Alky HF Acid Testing <i class="fa-solid fa-flask-vial"></i><i class="fa-solid fa-flask"></i></h1>
+    <header class="top">
+      <ul>
+        <li> 1. You'll weigh the caught sample HF cylinder and the empty crucible cup.</li>
+        <li>2. Start the heaters to an LED setting of 130 degrees C and an LED setting of 305 degrees C. This should give a sample temperature of 126 degrees F and 250 degrees F</li>
+        <li>Cook at 126 degrees F for 15 minutes, then at 250 degrees F for 5 minutes.  Weigh crucible after it cools to room temperature.
+        <li>3. Click ASO START button to begin.</li>
+      </ul>    
+    </header>
+    <div class="hero">
+    <div class="buttons-top">
+      <button id="startHF" class="btn-start">HF ASO START <i class="fa-solid fa-right-to-bracket fa-lg"></i></button>
+      <button id="reset">RESET <span class="txt-sm">double click</span> <i class="fa-solid fa-clock-rotate-left fa-lg"></i></button>   </div>
+    <div class="container-top">
+      <div class="hfSide">
+        <h2>Full Sample Weight</h2>
+          <p id="fullBomb-el">000</p>
+
+        <h2>Minus Sample Weight</h2>
+          <p id="minusSample-el">000</p>
+
+        <h2>Sample Used Weight</h2>
+          <p id="afterSample-el" class="txt-bold">000</p>
+      </div>
+
+      <div class="crucibleSide">
+        <h2>Empty Crucible Weight</h2>
+        <p id="withHF-el">000</p>
+
+        <h2>Cooked HF Crucible Weight</h2>
+        <p id="emptyHF-el">000</p>
+
+        <h2>Weight of HF</h2>
+        <p id="hfWeight-el" class="txt-bold">000</p>
+      </div>
+    </div> <!-- container-top -->
+
+    <div class="results">
+      <h2>ASO % RESULTS</h2>
+      <p id="asoResult-el" class="total">000</p>
+    </div>
+    <a href="#page2" class="btn">Go To HF PURITY <i class="fa-regular fa-circle-right fa-xl"></i></a>
+   </div>
+  </div> <!-- main -->
+  
+  <!-- HF PURITY SECTION -->
+  
+  <div class="secondary" id="page2">
+    
+    <div class="buttons-bottom">
+      <header class="bottom">
+      <ul class="instruct">
+        <li> 1. To a 250ml Erlenmeyer flask add 2 mL of 1.0 NaOH and Dilute to 50mL with D.I. water. Add several drops of phenolphthalein indicator. Connect to apparatus.</li>
+        <li>2. To a 500ml Erlenmeyer flask add 48mL of 1.0 NaOH and dilute to 150mL with D.I. water.  Add a magnetic stir bar and several drops of phenolphthalein indicator. Connect to apparatus.</li>
+        <li>3. Attach HF bomb to scrubber system. Slowly add acid until phenolphthalein color fades, then for 3-4 minutes longer.  Close sample valve.</li>
+        <li>4. Click HF PURITY START button to begin.</li>
+      </ul>    
+    </header>
+      <button id="startPurityHF" class="btn-start">HF PURITY START <i class="fa-solid fa-right-to-bracket fa-lg"></i></button>
+      <button id="reset2">RESET <span class="txt-sm">double click</span> <i class="fa-solid fa-clock-rotate-left fa-lg"></i></button>
+    </div>
+    <div class="container-bottom">
+      <div class="hfPuritySide">
+        <h2>Sample Weight</h2>
+          <p id="purityFullBomb-el">000</p> 
+
+        <h2>Minus Sample Weight</h2>
+          <p id="minusPuritySample-el">000</p>
+
+        <h2>Sample Used Weight</h2>
+          <p id="afterPuritySample-el" class="txt-bold">0</p>
+      </div>
+
+      <div class="titrateSide">
+        <h2>Titrate Number</h2>
+        <p id="titrateHF-el">0</p>
+
+        <h2>Titrate V</h2>
+        <p id="afterTotal-el">0</p>
+
+      </div>
+    </div> <!-- container-top -->
+
+    <div class="results">
+      <h2>HF PURITY RESULTS</h2>
+      <p id="hfResult-el" class="total">000</p>
+    </div>
+    <a href="#page1" class="btn">Go Back to ASO Testing <i class="fa-regular fa-circle-left fa-lg"></i></a>
+  </div> <!-- main -->
+   <div class="footer">
+        <div class="left">
+          Pennington Programming &copy; 2023
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="https://twitter.com/" alt="twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/" alt="facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.youtube.com/" alt="youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://www.linkedin.com/" alt="linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://scrimba.com/" target="_blank"><img class="scrimba-logo" src="/image/scrimba_logo.png" alt="scrimba logo"> Scrimba</a></li>
+          </ul>
+        </div> 
+      </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
